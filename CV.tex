@@ -130,9 +130,9 @@
 \textbf{基于深度学习和最大似然估计的波达方向估计算法研究} \hfill 2025.03 -- 2026.08 \titlebreak
 项目描述：现有的高分辨率DOA估计算法主要基于数学模型，在非理想环境下性能会严重下降，而现有的传统深度学习方法在高信噪比情况下存在固有的精度瓶颈。该项目通过使用生成式模型学习数据的概率分布，来达到兼顾深度学习的强鲁棒性与MLE的渐近统计最优性的目的。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{并发与调度}：后端采用 \textbf{Go} 语言，充分利用 \textbf{Goroutine} 和 \textbf{Channel} 的高并发模型，模拟\textbf{用户并发在线}，执行定时挖坑，确保挖坑行动的\textbf{隐蔽性}与\textbf{高效性}。
-    \item \textbf{实时监控与响应}：运用 \textbf{WebSocket} 协议实现了对目标帖子的\textbf{实时监听与交互}。确保在烂坑被识破的第一时间，Agent能光速完成\textbf{“lktp”}或\textbf{反向钓鱼}操作，展现出极高的AI博弈能力。
-    \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
+    \item \textbf{前期（2025.03 -- 2025.09）}：配置搭建了所需的Pytorch环境，学习并确定整体研究思路，根据研究所需场景构建含阵列误差，非高斯噪声的一维均匀线阵仿真数据集。
+    \item \textbf{中期（2025.10 -- 2026.03）}：以归一化流Normalizing Flow为基础架构，在此基础上搭建学习MLE的生成式模型，提出生成式最大似然（GMLE）算法，并通过仿真对比验证GMLE算法与Root-MUSIC及CNN在存在固定阵列误差以及非高斯干扰噪声等复杂场景下的RMSE表现。
+    \item \textbf{后期（2026.04 -- 2026.05）}：对整体算法思路，源代码以及数据集进行整理，撰写，打磨并产出了一篇会议论文，现已被CIE Radar 2026国际会议录用。
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 部分课程成绩}
