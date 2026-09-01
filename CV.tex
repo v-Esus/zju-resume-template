@@ -88,10 +88,6 @@
 \begin{document}
 \pagenumbering{gobble}
 
-%%%% 利用tikz来定位照片
-\begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{avatar.jpg}};
-  \end{tikzpicture}%
   %%%% 利用tikz来定位学校Logo，这里只在第一页显示
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
@@ -104,10 +100,10 @@
 \textbf{浙江大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
 电子科学与技术\quad 大三 
 \begin{itemize}[nosep]
-    \item 总平均绩点：4.52 
-    \item 主修平均绩点：4.47
+    \item 总平均绩点：4.52 主修平均绩点：4.48
     \item 总学分：151.5
-    \item 外语成绩： CET6 612，雅思 7.0
+    \item 成绩排名： 18/86
+    \item 外语成绩： CET6（612），IELTS （7.0） 
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 科研竞赛经历}
